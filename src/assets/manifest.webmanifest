@@ -1,7 +1,7 @@
 {
   "name": "Integer Recurrence Explorer",
   "short_name": "Recurrence",
-  "start_url": "/",
+  "start_url": "/integer-recurrence-explorer",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#1976d2",
