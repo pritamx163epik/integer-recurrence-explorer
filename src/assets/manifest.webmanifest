@@ -1,0 +1,16 @@
+{
+  "name": "Integer Recurrence Explorer",
+  "short_name": "Recurrence",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1976d2",
+  "description": "Explore integer recurrence sequences interactively.",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ]
+}
