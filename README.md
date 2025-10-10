@@ -1,1 +1,1 @@
-# integer-recurrence-explorer
+[https://ncg777.github.io/integer-recurrence-explorer/](https://ncg777.github.io/integer-recurrence-explorer/)
