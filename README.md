@@ -53,7 +53,6 @@ Open the app here: https://ncg777.github.io/integer-recurrence-explorer/
 - Initial conditions
 	- For order‑2 sequences (e.g., Fibonacci), provide two initials like `0 1`
 	- For order‑3 sequences (e.g., Tribonacci/Padovan/Perrin), provide three initials
-	- Index‑driven sequences (order 0) ignore initials; their `next` depends only on index
 - Parameters (when applicable)
 	- Xorshift: shift counts A, B, C
 	- LCG32: multiplier `a`, addend `c` (32‑bit arithmetic)
