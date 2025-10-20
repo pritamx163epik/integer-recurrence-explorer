@@ -63,6 +63,16 @@ import { Recurrence, LambdaRecurrence } from '../../models/recurrence';
       <button (click)="onGenerate()">Generate</button>
       <button (click)="onPresetInitial()">Fill default initial</button>
     </div>
+
+    <!-- Educative details synchronized with the current selection and parameters -->
+    <app-recurrence-details
+      [key]="selectedKey"
+      [xA]="xA" [xB]="xB" [xC]="xC"
+      [lcgA]="lcgA" [lcgC]="lcgC"
+      [weylOmega]="weylOmega"
+      [lfsrPoly]="lfsrPoly"
+      [rolRot]="rolRot"
+    ></app-recurrence-details>
   </div>
   `
 })

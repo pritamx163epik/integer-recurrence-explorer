@@ -98,6 +98,11 @@ const RecurrenceCatalog: { [key: string]: any } = {
         if (!Number.isFinite(n) || n <= 0) return 0;
         return n % 2 === 0 ? Math.floor(n / 2) : 3 * n + 1;
     }),
+    // Index-driven sequences
+    gray: grayCode,
+    thueMorse: thueMorse,
+    popcount: popcountSeq,
+    vdc2: vdc2,
     // Default Xorshift with standard parameters; UI can override via factory
     xorshift: xorshiftFactory(),
     lcg32: lcg32Factory(),

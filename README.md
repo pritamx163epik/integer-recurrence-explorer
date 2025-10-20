@@ -25,6 +25,7 @@ This project is a lightweight Angular single-page app configured for GitHub Page
 	- bounce: reflect in [0, N-1] (sawtooth bounce)
 - One‑click Copy to Clipboard or Download .txt
 - Installable via web app manifest (basic PWA)
+ - Live details panel: shows formula, notes, and typical initials for the selected recurrence
 
 
 ## Try it online
@@ -45,6 +46,7 @@ Open the app here: https://ncg777.github.io/integer-recurrence-explorer/
 	- Results stream via an RxJS `BehaviorSubject` for UI components
 - UI components
 	- `RecurrenceInputComponent`: choose recurrence, tweak parameters, enter initials, length, and range
+	- `RecurrenceDetailsComponent`: synchronized, educative description and formula for the selected recurrence
 	- `SequenceViewerComponent`: shows the sequence, copy/download actions
 
 
