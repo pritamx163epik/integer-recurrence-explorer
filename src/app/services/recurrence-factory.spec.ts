@@ -105,20 +105,6 @@ describe('RecurrenceCatalog',()=>{
         expect(rm.next([0])).toBe(0);
     });
 
-    it('Gray code (index-driven) first 8', () => {
-        const gray = RecurrenceCatalog.gray;
-        const seq:number[] = [];
-        for(let i=0;i<8;i++) seq.push(gray.next([], i));
-        expect(seq).toEqual([0,1,3,2,6,7,5,4]);
-    });
-
-    it('Thue-Morse (index parity) first 16', () => {
-        const tm = RecurrenceCatalog.thueMorse;
-        const seq:number[] = [];
-        for(let i=0;i<16;i++) seq.push(tm.next([], i));
-        expect(seq).toEqual([0,1,1,0,1,0,0,1,1,0,0,1,0,1,1,0]);
-    });
-
     it('Popcount(i) first 10', () => {
         const pc = RecurrenceCatalog.popcount;
         const seq:number[] = [];
@@ -126,10 +112,4 @@ describe('RecurrenceCatalog',()=>{
         expect(seq).toEqual([0,1,1,2,1,2,2,3,1,2]);
     });
 
-    it('Van der Corput base-2 (bit-reverse) first 4', () => {
-        const vdc2 = RecurrenceCatalog.vdc2;
-        const seq:number[] = [];
-        for(let i=0;i<4;i++) seq.push(vdc2.next([], i));
-        expect(seq).toEqual([0, -2147483648, 1073741824, -1073741824]);
-    });
 });

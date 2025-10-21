@@ -38,10 +38,6 @@ export class RecurrenceDetailsComponent {
       padovan: 'Padovan sequence',
       perrin: 'Perrin sequence',
       collatz: 'Collatz map',
-      gray: 'Gray code (index‑driven)',
-      thueMorse: 'Thue‑Morse sequence (index parity)',
-      popcount: 'Hamming weight of index',
-      vdc2: 'Van der Corput base‑2 (bit‑reverse)',
       xorshift: 'Xorshift (32‑bit)',
       lcg32: 'Linear Congruential Generator (32‑bit)',
       weyl32: 'Weyl sequence (32‑bit additive)',
@@ -68,14 +64,6 @@ export class RecurrenceDetailsComponent {
         return 'a(n) = a(n-2) + a(n-3)';
       case 'collatz':
         return 'a(n+1) = { a(n)/2  if a(n) is even;  3·a(n) + 1  if a(n) is odd }';
-      case 'gray':
-        return 'a(i) = i XOR (i >>> 1)  (computed from index i)';
-      case 'thueMorse':
-        return 'a(i) = popcount(i) mod 2  (parity of set bits in i)';
-      case 'popcount':
-        return 'a(i) = number of 1‑bits in binary expansion of i';
-      case 'vdc2':
-        return 'a(i) = bit‑reversal of 32‑bit index i (Van der Corput base‑2)';
       case 'xorshift':
         return `x ← x ⊕ (x << ${this.xA});  x ← x ⊕ (x >>> ${this.xB});  x ← x ⊕ (x << ${this.xC}) (on 32‑bit)`;
       case 'lcg32':
@@ -109,14 +97,6 @@ export class RecurrenceDetailsComponent {
         return 'Shares the Padovan relation with different initials: 3, 0, 2.';
       case 'collatz':
         return 'Iterates the 3n+1 map; defined for positive integers only.';
-      case 'gray':
-        return 'Binary‑reflected Gray code; successive values differ by one bit. Index‑driven, initials are ignored.';
-      case 'thueMorse':
-        return 'Balanced automatic sequence from index parity; 0/1 values. Index‑driven, initials are ignored.';
-      case 'popcount':
-        return 'Hamming weight of the index i. Index‑driven, initials are ignored.';
-      case 'vdc2':
-        return 'Bit‑reversal of the 32‑bit index; produces a low‑discrepancy permutation over 32‑bit integers.';
       case 'xorshift':
         return 'Bitwise PRNG on 32‑bit integers; quality depends on shift triplet (A,B,C). Avoid zero seed.';
       case 'lcg32':
@@ -143,10 +123,6 @@ export class RecurrenceDetailsComponent {
       case 'padovan': return '1 1 1';
       case 'perrin': return '3 0 2';
       case 'collatz': return 'Positive integer, e.g., 7';
-      case 'gray': return 'Index‑driven; initials are ignored';
-      case 'thueMorse': return 'Index‑driven; initials are ignored';
-      case 'popcount': return 'Index‑driven; initials are ignored';
-      case 'vdc2': return 'Index‑driven; initials are ignored';
       case 'xorshift': return 'Non‑zero 32‑bit seed, e.g., 123456789';
       case 'lcg32': return 'Any 32‑bit seed';
       case 'weyl32': return 'Any 32‑bit seed; ω often 0x9E3779B9';

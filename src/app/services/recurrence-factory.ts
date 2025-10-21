@@ -76,16 +76,6 @@ function rolMixFactory(rot = 7) {
     });
 }
 
-// Index-driven bit-pattern sequences
-const grayCode = new LambdaRecurrence('Gray code (index)', 0, (_: number[], i = 0) => toI32((i ^ (i >>> 1))));
-const thueMorse = new LambdaRecurrence('Thue-Morse (index parity)', 0, (_: number[], i = 0) => popcount32(i) & 1);
-const popcountSeq = new LambdaRecurrence('Popcount(i)', 0, (_: number[], i = 0) => popcount32(i));
-const vdc2 = new LambdaRecurrence('Van der Corput base-2 (bit-reverse)', 0, (_: number[], i = 0) => {
-    let x = i >>> 0, y = 0;
-    for (let k = 0; k < 32; k++) { y = (y << 1) | (x & 1); x >>>= 1; }
-    return toI32(y);
-});
-
 const RecurrenceCatalog: { [key: string]: any } = {
     fibonacci: new LambdaRecurrence('Fibonacci', 2, ([a, b]) => a + b),
     lucas: new LambdaRecurrence('Lucas', 2, ([a, b]) => a + b),
@@ -98,11 +88,6 @@ const RecurrenceCatalog: { [key: string]: any } = {
         if (!Number.isFinite(n) || n <= 0) return 0;
         return n % 2 === 0 ? Math.floor(n / 2) : 3 * n + 1;
     }),
-    // Index-driven sequences
-    gray: grayCode,
-    thueMorse: thueMorse,
-    popcount: popcountSeq,
-    vdc2: vdc2,
     // Default Xorshift with standard parameters; UI can override via factory
     xorshift: xorshiftFactory(),
     lcg32: lcg32Factory(),
